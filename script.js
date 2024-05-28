@@ -5,7 +5,7 @@ async function captureImage() {
     const iframe = document.getElementById('imageFrame');
 
     try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
         video.srcObject = stream;
         await new Promise((resolve) => (video.onloadedmetadata = resolve));
 
