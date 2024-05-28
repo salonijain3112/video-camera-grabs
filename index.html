@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Capture in Iframe</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        video, iframe {
+            width: 45%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <video id="video" autoplay></video>
+        <iframe id="imageFrame"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
